@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int number, reversedNumber;
+
+    printf("Enter a two-digit number: ");
+    scanf("%d", &number); 
+
+    int onesDigit = number % 10;
+    int tensDigit = number / 10; 
+
+    reversedNumber = (onesDigit * 10) + tensDigit; 
+
+    printf("The reversal is: %d\n", reversedNumber); 
+
+    return 0;
+}
